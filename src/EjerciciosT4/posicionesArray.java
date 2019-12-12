@@ -9,7 +9,7 @@ pasa a la posición 1 y así sucesivamente. El elemento que está en la
 realizar la tarea anterior pero al contrario. El elemento que está en 
 la primera posición pasa a la última y así sucesivamente
  */
-package Ejercicios2Eva;
+package EjerciciosT4;
 
 import java.util.Scanner;
 

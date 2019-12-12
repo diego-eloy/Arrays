@@ -13,7 +13,7 @@ el penúltimo con el último.
 Invertir el array
 Mostrar la posición del primer par y del último impar.
  */
-package Ejercicios2Eva;
+package EjerciciosT4;
 
 import java.util.Scanner;
 

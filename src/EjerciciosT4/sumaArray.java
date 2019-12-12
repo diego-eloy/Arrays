@@ -6,7 +6,7 @@ crea un tercer array de la misma longitud que los dos anteriores
 rellena el tercer array con la suma de las posiciones 
 (Array1.posicion1 + array2.posicion = array3.posicion)
  */
-package Ejercicios2Eva;
+package EjerciciosT4;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Ejercicios2Eva;
+package EjerciciosT4;
 
 import java.util.Scanner;
 //Generar aleatoriamente una palabra de la longitud que metamos por teclado

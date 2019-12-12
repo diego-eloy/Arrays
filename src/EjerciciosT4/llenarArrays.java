@@ -1,4 +1,4 @@
-package Ejercicios2Eva;
+package EjerciciosT4;
 
 /* 
 (LlenarArrays) Crear un array de int que tenga 
