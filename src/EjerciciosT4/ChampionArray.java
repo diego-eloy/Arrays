@@ -23,25 +23,34 @@ public class ChampionArray {
         String[] bombo2 = {"Real Madrid", "Tottenham", "Napoles", "B.Dortmund", "O.Lyon",
             "Chelsea", "Atalanta", "Atletico de Madrid"};
         
-        int[] generardosBombo1 = new int[bombo1.length];
-        int[] generardosBombo2 = new int[bombo2.length];
+        int[] generadosBombo1 = {10,10,10,10,10,10,10,10};
+        int[] generadosBombo2 = {10,10,10,10,10,10,10,10};
 
         for (int i = 0; i < bombo1.length; i++) {
-            System.out.println(bombo1[bomboAleatorio(bombo1.length)]);
-            System.out.println(bombo2[bomboAleatorio(bombo2.length)]);
-            System.out.println("******");
-            
+
             int aleatorio;
             
             do{
                 aleatorio = bomboAleatorio(bombo1.length);
-            }while(encontrar(aleatorio, generardosBombo1));
-            generardosBombo1[i] = aleatorio;
+            }while(encontrar(aleatorio, generadosBombo1));
+                generadosBombo1[i] = aleatorio;
         }
         
+        for (int i = 0; i < bombo2.length; i++) {
+
+            int aleatorio;
+            
+            do{
+                aleatorio = bomboAleatorio(bombo1.length);
+            }while(encontrar(aleatorio, generadosBombo2));
+                generadosBombo2[i] = aleatorio;
+        }
+        
+        listarArray(generadosBombo1,bombo1, generadosBombo2,bombo2);
     }
+    
     public static int bomboAleatorio(int longitud) {
-        int aleatorio1 = (int) (Math.random() * longitud - 1);
+        int aleatorio1 = (int) (Math.random() * longitud);
         return aleatorio1;
     }
     
@@ -54,6 +63,12 @@ public class ChampionArray {
             }
         }
     return encontrado;
+    }
+    
+    public static void listarArray(int[] coleccion,String[] equipos1,int[] coleccion2,String[] equipos2){
+        for (int i = 0; i < coleccion.length; i++) {
+            System.out.println(equipos1[coleccion[i]] +" - "+equipos2[coleccion2[i]]);
+        }
     }
 
 }
